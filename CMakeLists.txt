@@ -72,6 +72,7 @@ ENDIF ()
 INCLUDE_DIRECTORIES ( include )
 SET (   SRC_LIB 
 		src/lapi.cpp
+		src/eris.cpp
 		src/lauxlib.cpp
 		src/lbaselib.cpp
 		src/lbitlib.cpp

@@ -22,7 +22,7 @@ SYSLIBS=
 MYCFLAGS=
 MYLDFLAGS=
 MYLIBS=
-MYOBJS=
+MYOBJS=eris.o
 
 # == END OF USER SETTINGS -- NO NEED TO CHANGE ANYTHING BELOW THIS LINE =======
 
@@ -183,4 +183,6 @@ lvm.o: lvm.cpp ../include/lua.h ../include/luaconf.h ../include/ldebug.h ../incl
  ../include/lzio.h ../include/lmem.h ../include/ldo.h ../include/lfunc.h ../include/lgc.h ../include/lopcodes.h ../include/lstring.h ../include/ltable.h ../include/lvm.h
 lzio.o: lzio.cpp ../include/lua.h ../include/luaconf.h ../include/llimits.h ../include/lmem.h ../include/lstate.h ../include/lobject.h ../include/ltm.h \
  ../include/lzio.h
+eris.o: eris.c lua.h lauxlib.h lualib.h ldebug.h ldo.h lfunc.h lobject.h \
+ lstate.h lstring.h lzio.h eris.h
 
